@@ -25,22 +25,18 @@ def task(n, active_tasks):
     thread_name = threading.current_thread().name
     start_time = time.time()
     
-    # Register task start
     active_tasks[thread_name] = {
         'task_id': n,
         'start': start_time
     }
     
-    # Update progress every 0.1 seconds
     for _ in range(10):
         display_progress(active_tasks)
         time.sleep(0.1)
     
-    # Remove completed task
     active_tasks.pop(thread_name, None)
     display_progress(active_tasks)
 
-# Dictionary to store active tasks
 active_tasks = {}
 
 with ThreadPoolExecutor(max_workers=5) as executor:
