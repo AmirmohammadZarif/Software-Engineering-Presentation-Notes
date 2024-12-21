@@ -48,12 +48,12 @@ The presentation explores various concurrency patterns and their implementations
 ```
 
 ## 🎥 Visualizations
-The project includes animated visualizations created with Manim to demonstrate:
+The project includes animated visualizations created with `Manim` to demonstrate:
 Thread pool task distribution
 Worker model package delivery
 Concurrent task execution
 example: 
-![Thread Pool Animation](1-thread-pool/media/videos/book-example-visualized/480p15/ThreadPoolVisualization.mp4)
+![Thread Pool Animation](2-worker-model/media/videos/book-example-manim/480p15/example2.gif)
 
 
 ## 🛠 Requirements
