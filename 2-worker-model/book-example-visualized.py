@@ -43,11 +43,9 @@ if __name__ == '__main__':
     task_queue = Queue()
     status_queue = Queue()
     
-    # Initialize packages
     for package_id in range(10):
         task_queue.put(package_id)
     
-    # Initialize worker status
     workers_status = {i: {'active': False} for i in range(NUM_WORKERS)}
     
     # Start workers
