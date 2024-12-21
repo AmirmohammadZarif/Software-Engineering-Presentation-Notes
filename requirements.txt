@@ -1,0 +1,7 @@
+manim
+reactivex
+fastapi
+aiohttp
+redis
+pillow
+faker
